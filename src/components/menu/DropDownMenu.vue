@@ -16,6 +16,7 @@
             return {
                 menuItems: [new Link("Home", "#"),
                  new Link("Project", "#"), 
+                 new Link("Schedule", "#"),
                  new Link("Contact", "#"), 
                  new Link("About", "#")],
             }
@@ -63,7 +64,7 @@
 }
 .drop-down-parent:hover .drop-down-menu {
     max-height: 100vh;
-    max-width: 30vh;
+    max-width: 50vw;
     transition: max-height 0.15s ease-in, max-width 0.25s ease-in;
 }
 
