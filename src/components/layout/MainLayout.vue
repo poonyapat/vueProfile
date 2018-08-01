@@ -1,30 +1,49 @@
 <template>
     <div>
         <!-- header -->
-        <div class="boxShadow">
+        <div :class="mainStyle" style="text-align: center">
             <h1> {{ banner }} </h1>
             <p> {{ author }} </p>
         </div>
         <!-- content -->
-        <div class="boxShadow">
-            <slot></slot>
-        </div>
+        <component :is="current"></component>
+        <!-- footer -->
+        <component v-if="footer != null" :is="footer"></component>
     </div>
 </template>
 
 <script>
+    import BoxTemplate from "./sub/BoxTemplate.vue"
+    import HomeLayout from "./HomeLayout.vue"
+
     export default {
         name: "MainLayout",
         props: {
-            banner: String
+            banner: {
+                type: String,
+                default: "Empty"
+            },
+            footer: {
+                type: String,
+                default: null
+            },
+            mainStyle: {
+                type: String,
+                default: "boxShadow"
+            },
         },
         data() {
             return {
-                author: "Poonyapat Yanvisit"
+                author: "Poonyapat Yanvisit [Poon]",
+                current: "HomeLayout"
             }
         },
+        components: {
+            BoxTemplate, HomeLayout
+        }
     }
 </script>
 
 <style scoped>
+
 </style>

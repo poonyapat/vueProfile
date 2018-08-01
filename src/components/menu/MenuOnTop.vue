@@ -9,6 +9,12 @@
 <script>
     export default {
         name: "MenuOnTop",
+        props: {
+            onTop: {
+                type: Boolean,
+                default: false
+            },
+        },
         data() {
             return {
                 menuItems: ["Home", "Poject", "Contact", "About"],

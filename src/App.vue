@@ -1,11 +1,7 @@
 <template>
-    <div id="app">
+    <div id="app" :class="appStyle">
         <drop-down-menu />
-        <main-layout banner="Home">
-            <img src="./assets/logo.png">
-            <img src="./assets/logo.png">
-            <img src="./assets/logo.png">
-        </main-layout>
+        <main-layout banner="Home" />
     </div>
 </template>
 
@@ -19,7 +15,12 @@
         components: {
             MenuOnTop, DropDownMenu, 
             MainLayout
-        }
+        },
+        data() {
+            return {
+                appStyle: "app01"
+            }
+        },
     }
 </script>
 
@@ -30,18 +31,29 @@
     }
 
     #app {
-        text-align: center;
+        /* text-align: center; */
         max-width: 50em;
         margin: auto;
-        padding: 20px 0px;
+    }
+
+    .app01 {
         background-color: rgb(255, 236, 206);
-        box-shadow: 10px 10px 20px gray;
+        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3);
+        padding: 20px 0px;
     }
 
     .boxShadow {
-        box-shadow: 5px 5px 20px gray;
+        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3);
         margin: 20px;
-        background-color: rgb(250, 218, 182);
+        background-color: rgba(253, 191, 120, 0.288);
         padding: 20px;
+    }
+
+    .boxHover {
+        transition: all 0.25s ease-in-out;
+    }
+
+    .boxHover:hover {
+        transform: scale(1.1);
     }
 </style>
