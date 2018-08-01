@@ -13,8 +13,8 @@
 </template>
 
 <script>
-    import BoxTemplate from "../container/BoxTemplate.vue"
-    import HomeLayout from "./home/HomeLayout.vue"
+    import BoxTemplate from "../template/BoxTemplate.vue"
+    import HomeLayout from "./HomeLayout.vue"
 
     export default {
         name: "MainLayout",
