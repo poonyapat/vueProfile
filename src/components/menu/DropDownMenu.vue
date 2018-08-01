@@ -14,7 +14,7 @@
         name: "DropDownMenu",
         data() {
             return {
-                menuItems: [new Link("Home", "#"),
+                menuItems: [new Link("home", "#"),
                  new Link("Project", "#"), 
                  new Link("Schedule", "#"),
                  new Link("Contact", "#"), 

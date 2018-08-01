@@ -1,22 +1,20 @@
 <template>
     <div>
-        <button v-for="tab in buttonTab" :key="tab" @click="changeTab(tab)"> {{ tab }}</button>
-        {{ currentTab}}
+        <button v-for="tab in buttonTab" :key="tab" @click="$emit('change-tab', tab)"> {{ tab }}</button>
     </div>
 </template>
 
 <script>
     export default {
         name: "MultiTabTemplate",
-        data() {
-            return {
-                buttonTab: ["Profile", "Education", "Programming", "Activity"],
-                currentTab: "Profile"
-            }
-        },
-        methods: {
-            changeTab(tab) {
-                this.currentTab = tab
+        props: {
+            currentTab: {
+                type: String,
+                required: true
+            },
+            buttonTab: {
+                type: Array,
+                required: true
             }
         },
     }
@@ -29,7 +27,6 @@
         border: none;
         color: floralwhite;
     }
-
     button:hover {
         background-color: #222;
     }

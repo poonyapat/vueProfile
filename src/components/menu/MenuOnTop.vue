@@ -17,7 +17,7 @@
         },
         data() {
             return {
-                menuItems: ["Home", "Poject", "Contact", "About"],
+                menuItems: ["home", "Poject", "Contact", "About"],
                 position: "relative"
             }
         },

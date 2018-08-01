@@ -14,7 +14,7 @@
 
 <script>
     import BoxTemplate from "./sub/BoxTemplate.vue"
-    import HomeLayout from "./HomeLayout.vue"
+    import HomeLayout from "./home/HomeLayout.vue"
 
     export default {
         name: "MainLayout",
