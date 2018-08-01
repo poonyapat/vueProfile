@@ -6,11 +6,9 @@
             </template>
             <template v-else-if="value instanceof Object">
                 <p :key="key"> {{key}}: </p>
-                <ul :key="key">
-                    <li v-for="(objValue, objKey) in value" :key="objKey">
-                        {{objKey}} : {{generateValue(objValue)}}
-                    </li>
-                </ul>
+                <li v-for="(objValue, objKey) in value" :key="objKey">
+                    {{objKey}} : {{generateValue(objValue)}}
+                </li>
             </template>
         </template>
     </div>
@@ -27,22 +25,20 @@
         },
         methods: {
             generateValue(value) {
-                if (this.isString(value))
-                {
+                if (this.isString(value)) {
                     return value
                 }
-                else{
+                else {
                     let output = ""
-                    for (let i = 0; i < value.length; i++){
+                    for (let i = 0; i < value.length; i++) {
                         output += value[i]
-                        if (i < value.length-1)
+                        if (i < value.length - 1)
                             output += ", "
                     }
                     return output
                 }
             },
-            isString(value)
-            {
+            isString(value) {
                 return value instanceof String || typeof value === 'string'
             }
         },
@@ -54,7 +50,7 @@
         padding: 1em;
     }
 
-    p, li{
+    p, li {
         padding: 1em;
         font-size: 1em;
     }
