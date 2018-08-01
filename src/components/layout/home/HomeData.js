@@ -1,7 +1,6 @@
 export var general = {
     "Name": "Poonyapat Yanvisit",
     "Age": "20 years old",
-    "Birth Date": "April 10, 1998",
     "Gender": "Male",
     "Job": "Student",
     "Address": {
@@ -36,7 +35,7 @@ export var programming = {
 
 export var activity = {
     "Games": {
-        "League of Legend" : "Ex Thai Pro Player",
+        "League of Legend" : "Ex Thai Pro Player (Diamond Rank)",
         "Overwatch" : "Rank 2400"
     },
     "Book": {

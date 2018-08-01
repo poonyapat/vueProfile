@@ -5,10 +5,10 @@
 </template>
 
 <script>
-    import MultiTabTemplate from "../sub/multitab/MultiTabTemplate.vue"
-    import BoxTemplate from "../sub/container/BoxTemplate.vue"
+    import MultiTabTemplate from "../../multitab/MultiTabTemplate.vue"
+    import BoxTemplate from "../../container/BoxTemplate.vue"
     import {general, education, programming, experience, activity} from "./HomeData";
-    import {Tab} from "../sub/multitab/Tab"
+    import {Tab} from "../../multitab/Tab"
 
     export default {
         name: "HomeLayout",

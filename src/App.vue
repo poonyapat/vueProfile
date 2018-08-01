@@ -27,7 +27,7 @@
 <style>
     body {
         margin: 0px;
-        background-color: rgb(252, 245, 236);
+        background-color: rgb(255, 247, 236);
     }
 
     #app {
@@ -44,9 +44,9 @@
 
     .boxShadow {
         box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3);
-        margin: 20px;
+        margin: 15px;
         background-color: rgba(253, 191, 120, 0.288);
-        padding: 20px;
+        padding: 15px;
     }
 
     .boxHover {
