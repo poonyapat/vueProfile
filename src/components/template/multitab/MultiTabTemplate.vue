@@ -7,8 +7,8 @@
 
 <script>
     import MultiTabMenu from "./MultiTabMenu"
-    import BoxTemplate from "../template/BoxTemplate"
-    import ContainerATemplate from "../template/ContainerATemplate"
+    import BoxTemplate from "../BoxTemplate"
+    import ContainerATemplate from "../ContainerATemplate"
 
     export default {
         name: "MultiTabTemplate",
