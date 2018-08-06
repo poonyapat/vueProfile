@@ -58,16 +58,3 @@
         }
     }
 </script>
-
-<style scoped>
-    .block {
-        width: 10em;
-        height: 8em;
-    }
-
-    .inline-flex-center {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center
-    }
-</style>

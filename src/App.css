@@ -27,6 +27,12 @@ body {
     text-align: center;
 }
 
+.silver-field {
+    background: linear-gradient(to bottom right, #b1b1b1, #dcdcdc);
+    color: #333333;
+    text-align: center;
+}
+
 .boxHover {
     transition: all 0.3s ease-in-out;
 }
@@ -34,5 +40,16 @@ body {
 .boxHover:hover {
     transform: scale(1.1);
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.6);
+}
+
+.block {
+    width: 10em;
+    height: 8em;
+}
+
+.inline-flex-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
 }
 
