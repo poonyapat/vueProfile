@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+    background-color: rgb(255, 247, 236);
+}
+
+#app {
+    /* text-align: center; */
+    max-width: 60em;
+    margin: auto;
+}
+
+.app01 {
+    background-color: rgb(255, 236, 206);
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    padding: 20px 0px;
+}
+
+.boxShadow {
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    margin: 15px;
+    padding: 15px;
+}
+
+.blackField {
+    background-color: #333333;
+    color: #ffe0bd;
+    text-align: center;
+}
+
+.boxHover {
+    transition: all 0.3s ease-in-out;
+}
+
+.boxHover:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.6);
+}
+

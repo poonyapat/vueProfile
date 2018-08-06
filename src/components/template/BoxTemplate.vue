@@ -1,5 +1,5 @@
 <template>
-    <div :class="mainStyle">
+    <div :class="mainStyle" :style="{backgroundColor: bgColor}">
         <slot></slot>
     </div>
 </template>
@@ -12,6 +12,10 @@
                 type: String,
                 default: "boxShadow"
             },
+            bgColor: {
+                type: String,
+                default: "rgba(253, 191, 120, 0.25)"
+            }
         },
     }
 </script>

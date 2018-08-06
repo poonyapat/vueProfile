@@ -3,9 +3,9 @@
         <div class="drop-down-head">
             <div v-for="i in 3" :key="i" class="menu-icon"></div>
         </div>
-        <div class="drop-down-menu">
-            <a v-for="menuItem in menuItems" :key="menuItem.caption" :href="menuItem.href"> {{ menuItem.caption }} </a>
-        </div>
+        <nav class="drop-down-menu">
+            <router-link v-for="menuItem in menuItems" :key="menuItem.caption" :to="menuItem.href"> {{ menuItem.caption }} </router-link>
+        </nav>
     </div>
 </template>
 
@@ -14,11 +14,11 @@
         name: "DropDownMenu",
         data() {
             return {
-                menuItems: [new Link("Home", "#"),
-                 new Link("Project", "#"), 
-                 new Link("Schedule", "#"),
-                 new Link("Contact", "#"), 
-                 new Link("About", "#")],
+                menuItems: [new Link("Home", "/"),
+                 new Link("Project", "/project"),
+                 new Link("Schedule", "/schedule"),
+                 new Link("Contact", "/contact"),
+                 new Link("About", "/about")],
             }
         },
     }

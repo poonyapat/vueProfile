@@ -1,7 +1,10 @@
 <template>
     <box-template>
         <multi-tab-menu :current-tab="currentTab" :tabs="tabs" v-on:change-tab="changeTab"></multi-tab-menu>
-        <container-a-template :data="currentTab.content"></container-a-template>
+        <!--<container-a-template :data="currentTab.content"></container-a-template>-->
+        <keep-alive>
+            <component :is="currentTab.content" style="padding: 1em;"></component>
+        </keep-alive>
     </box-template>
 </template>
 
