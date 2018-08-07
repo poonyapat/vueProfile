@@ -32,7 +32,7 @@
 <style scoped>
 
 .drop-down-menu {
-    background-color: #333333;
+    background-color: #eeeeee;
     margin: 0px;
     max-width: 40px;
     height: 100vh;
@@ -43,7 +43,7 @@
 }
 
 .drop-down-menu a:hover{
-    background-color: black;
+    background-color: #cccccc;
 }
 
 .top-left-pos {
@@ -53,14 +53,14 @@
 }
 
 .drop-down-parent a {
-    background-color: #333333;
-    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    color: #333333;
     padding: 20px 40px;
     text-decoration: none;
     display: block;
     transition: all 0.3s ease;
     text-align: center;
-    
+
 }
 .drop-down-parent:hover .drop-down-menu {
     max-height: 100vh;
@@ -71,8 +71,6 @@
 .drop-down-parent:hover .drop-down-head{
     max-height: 0px;
     overflow: hidden;
-    transform: rotate(-180deg);
-    transition: transform 0.5s ease-in-out;
     transition: max-height 0.25s ease-in-out;
 }
 
@@ -83,7 +81,7 @@
 .menu-icon {
     width: 100%;
     height: 5px;
-    background-color: black;
+    background-color: white;
     margin: 6px 0px;
 }
 </style>

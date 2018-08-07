@@ -1,16 +1,15 @@
 body {
     margin: 0px;
-    background-color: rgb(255, 247, 236);
+    background-color: #333333;
 }
 
 #app {
-    /* text-align: center; */
     max-width: 60em;
     margin: auto;
 }
 
 .app01 {
-    background-color: rgb(255, 236, 206);
+    background: linear-gradient(to bottom right, #eeeeee, #555555);
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3);
     padding: 20px 0px;
 }
@@ -21,14 +20,19 @@ body {
     padding: 15px;
 }
 
+.blue-shadow{
+    border: solid #aaeeff;
+    box-shadow: 0 8px 16px #71b7ee;
+}
+
 .blackField {
-    background-color: #333333;
-    color: #ffe0bd;
+    background: linear-gradient(to bottom right, #333333, #111111);
+    color: #eeeeee;
     text-align: center;
 }
 
 .silver-field {
-    background: linear-gradient(to bottom right, #b1b1b1, #dcdcdc);
+    background: linear-gradient(to bottom right, #eeeeee, #dddddd);
     color: #333333;
     text-align: center;
 }

@@ -39,7 +39,7 @@
                         "Types": "Novel, Light Novel, Manga",
                         "Categories": "Fantasy, Action, Drama, Comedy, Romantic"
                     },
-                    others: ["Sleep", "Running", "Eating", "Using Internet", "Programming", "Watch Anime/Movie"]
+                    others: ["Sleeping", "Running", "Eating", "Using Internet", "Programming", "Watching Anime/Movie"]
                 }
             }
         },

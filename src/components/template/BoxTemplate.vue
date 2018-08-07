@@ -1,5 +1,5 @@
 <template>
-    <div :class="mainStyle" :style="{backgroundColor: bgColor}">
+    <div :class="mainStyle" :style="{background: bgColor}">
         <slot></slot>
     </div>
 </template>
@@ -14,7 +14,8 @@
             },
             bgColor: {
                 type: String,
-                default: "rgba(253, 191, 120, 0.25)"
+                default: "linear-gradient(to bottom right, #ffffff, #e0e0e0)"
+                // default: "rgba(253, 191, 120, 0.25)"
             }
         },
     }
