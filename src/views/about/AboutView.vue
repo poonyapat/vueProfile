@@ -6,9 +6,10 @@
 </template>
 
 <script>
-    import BoxTemplate from "../../template/BoxTemplate"
+    import BoxTemplate from "../../components/template/BoxTemplate"
+
     export default {
-        name: "AboutLayout",
+        name: "AboutView",
         components: {
             BoxTemplate
         }

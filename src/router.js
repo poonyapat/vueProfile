@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomeLayout from './components/layout/home/HomeLayout'
-import ProjectLayout from './components/layout/project/ProjectLayout'
-import ScheduleLayout from './components/layout/schedule/ScheduleLayout'
-import ContactLayout from './components/layout/contact/ContactLayout'
-import AboutLayout from './components/layout/about/AboutLayout'
+import HomeView from './views/home/HomeView'
+import ProjectView from './views/project/ProjectView'
+import ScheduleView from './views/schedule/ScheduleView'
+import ContactView from './views/contact/ContactView'
+import AboutView from './views/about/AboutView'
 
 Vue.use(Router)
 
@@ -13,27 +13,27 @@ export default new Router({
         {
             path: "/",
             name: "Home",
-            component: HomeLayout
+            component: HomeView
         },
         {
             path: "/project",
             name: "Project",
-            component: ProjectLayout
+            component: ProjectView
         },
         {
             path: "/schedule",
             name: "Schedule",
-            component: ScheduleLayout
+            component: ScheduleView
         },
         {
             path: "/contact",
             name: "Contact",
-            component: ContactLayout
+            component: ContactView
         },
         {
             path: "/about",
             name: "About",
-            component: AboutLayout
+            component: AboutView
         }
     ]
 })

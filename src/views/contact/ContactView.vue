@@ -8,10 +8,10 @@
 </template>
 
 <script>
-    import BoxTemplate from "../../template/BoxTemplate"
+    import BoxTemplate from "../../components/template/BoxTemplate"
 
     export default {
-        name: "ContactLayout",
+        name: "ContactView",
         components: {
             BoxTemplate
         }

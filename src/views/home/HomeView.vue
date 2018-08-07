@@ -9,10 +9,10 @@
 </template>
 
 <script>
-    import MultiTabTemplate from "../../multitab/MultiTabTemplate.vue"
-    import BoxTemplate from "../../template/BoxTemplate.vue"
+    import MultiTabTemplate from "../../components/multitab/MultiTabTemplate.vue"
+    import BoxTemplate from "../../components/template/BoxTemplate.vue"
     // import {general, education, programming, experience, activity} from "../../../data/HomeData";
-    import {Tab} from "../../multitab/Tab"
+    import {Tab} from "../../components/multitab/Tab"
     import GeneralTab from "./GeneralTab"
     import EducationTab from "./EducationTab"
     import ProgrammingTab from "./ProgrammingTab"
@@ -20,7 +20,7 @@
     import ActivityTab from "./ActivityTab"
 
     export default {
-        name: "HomeLayout",
+        name: "HomeView",
         components: {
             BoxTemplate,
             MultiTabTemplate

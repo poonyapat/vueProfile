@@ -36,7 +36,7 @@
 </template>
 
 <script>
-    import BlackHoverTemplate from "../../template/BlackHoverTemplate"
+    import BlackHoverTemplate from "../../components/template/BlackHoverTemplate"
 
     export default {
         name: "GeneralTab",

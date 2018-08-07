@@ -13,8 +13,8 @@
 </template>
 
 <script>
-    import BlackHoverTemplate from "../../template/BlackHoverTemplate"
-    import BoxTemplate from "../../template/BoxTemplate"
+    import BlackHoverTemplate from "../../components/template/BlackHoverTemplate"
+    import BoxTemplate from "../../components/template/BoxTemplate"
 
     export default {
         name: "EducationTab",
