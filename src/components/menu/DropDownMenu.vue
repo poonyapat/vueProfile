@@ -12,20 +12,12 @@
 <script>
     export default {
         name: "DropDownMenu",
-        data() {
-            return {
-                menuItems: [new Link("Home", "/"),
-                 new Link("Project", "/project"),
-                 new Link("Schedule", "/schedule"),
-                 new Link("Contact", "/contact"),
-                 new Link("About", "/about")],
-            }
+        props: {
+            menuItems: {
+                type: Array,
+                required: true
+            },
         },
-    }
-
-    function Link(caption, href){
-        this.caption = caption
-        this.href = href
     }
 </script>
 

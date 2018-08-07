@@ -21,6 +21,17 @@
                     <p>[JavaFX]</p>
                 </box-link-template>
             </div>
+            <h1>Bitbucket</h1>
+            <div style="display: flex; justify-content: center">
+                <box-link-template add-on-class="block" url="https://bitbucket.org/5910401106/animal-animation/">
+                    <h2>2D Animation</h2>
+                    <p>[JavaFX]</p>
+                </box-link-template>
+                <box-link-template add-on-class="block" url="https://bitbucket.org/5910401106/breakout-game">
+                    <h2>Breakout Game</h2>
+                    <p>[SDL C++]</p>
+                </box-link-template>
+            </div>
         </box-template>
     </div>
 </template>
