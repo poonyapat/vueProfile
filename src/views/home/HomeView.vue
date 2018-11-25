@@ -11,7 +11,6 @@
 <script>
     import MultiTabTemplate from "../../components/multitab/MultiTabTemplate.vue"
     import BoxTemplate from "../../components/template/BoxTemplate.vue"
-    // import {general, education, programming, experience, activity} from "../../../data/HomeData";
     import {Tab} from "../../components/multitab/Tab"
     import GeneralTab from "./GeneralTab"
     import EducationTab from "./EducationTab"

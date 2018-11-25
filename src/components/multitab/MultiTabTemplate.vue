@@ -1,6 +1,6 @@
 <template>
     <box-template>
-        <multi-tab-menu :current-tab="currentTab" :tabs="tabs" v-on:change-tab="changeTab"></multi-tab-menu>
+        <multi-tab-menu :current-tab="currentTab" :tabs="tabs" @change-tab="changeTab"></multi-tab-menu>
         <keep-alive>
             <component :is="currentTab.content" style="padding: 1em;"></component>
         </keep-alive>
